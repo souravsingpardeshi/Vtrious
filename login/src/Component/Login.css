@@ -1,0 +1,109 @@
+*{
+    padding: 0%;
+    margin: 0%;
+
+}
+.Main{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-color: #2148C0;
+    text-align: center;
+   background-image: url("/src/Img/BG.png");
+   background-position:center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    height: 398px;
+    width: 300px;
+    color: #FFFFFF;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+
+}
+.form>img{
+    display: flex;
+    height: 97.85px;
+    width: 119.39px;
+
+}
+.cont>input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #FFFFFF;
+    width: 274.33px;
+    height: 45px;
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+input#user{
+    padding-left: 25.67px;
+    background-image: url("/src/Img/user.png");
+    background-color: #2148C0;
+    background-repeat: no-repeat;
+    background-position: 12px;
+    top: 10%;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    margin-top: 71.15px;
+    text-indent: 20px;
+   }
+   ::placeholder { 
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-weight: 300;
+  }
+   input#pass{
+    padding-left: 25.67px;
+    background-image: url("/src/Img/lock.png");
+    background-color: #2148C0;
+    background-repeat: no-repeat;
+    background-position: 12px;
+    color: aliceblue;
+    text-indent: 20px;
+   }
+.form>button{
+    margin-top: 43px;
+    width: 300px;
+    height: 45px;
+    border-style: none;
+    color: #2148C0;
+    line-height: 30px;
+    font-family: Montserrat;
+    font-weight: 600 !important;
+    border-radius: 4px;
+    filter: drop-shadow(0px 4px rgba(0, 0, 0, 0.3));
+}
+.form>a{
+    font-weight: 500 !important;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-style: medium;
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-top: 11px;
+    margin-right: -154px;
+    
+}
+@media screen and (max-width:550px) {
+    .Main{
+        background-image: none;
+    }
+    .Main .form{
+        margin-top: -155px;
+    }
+    .form>a{
+        margin-right: 0%;
+    }
+    .form>img{
+        width: 134.31px;
+        height: 77.41px;
+    }
+}
