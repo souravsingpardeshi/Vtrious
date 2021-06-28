@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+.Main{
+    display: flex;
+    flex-direction: column;
+    background: #F9F9F9;
+    height: 100vh;
+    z-index: -2;
+    overflow: hidden;
+}
+.header{
+    z-index: 10;
+    width:100%;
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+    flex-direction: row;
+   align-self: center;
+    text-align: center;
+}
+.nav{
+    z-index: 10;
+    display: flex;
+    position: relative;
+    right:8.33vw;
+    top: 4.89vh;
+    gap: 2.78vw;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.cont{
+    display: flex;
+    margin-left: 8.33vw;
+    margin-right: 8.33vw;
+    height: 100vh;
+        align-self: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+}
+.logo>img{
+    position: relative;
+    left:9.30vw;
+    top: 4.10vh;
+}
+.nav>h3{
+    font-size: 20px;
+    color: #303031;
+    font-weight: 500 !important;
+    font-style: medium;
+    letter-spacing: -2%;
+    font-family: roboto;
+}
+#redi{
+    color:#71A89E;
+    font-weight: 700 !important;
+    font-style: normal;
+    letter-spacing: -2%;
+    font-family: roboto;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -5vh;
+}
+.text>Link{
+    color: #F9F9F9;
+    text-decoration: none !important;
+}
+.text>button{
+    position: relative;
+    display: flex;
+    border-radius: 8px;
+    border: 2px solid black;
+    padding: 20px 24px 20px 24px;
+    align-items: center;
+    margin-top: 1.95vh;
+    width: 15.34vw;
+    height: 6.25vh;
+    align-items: center;
+    font-size: 14px;
+    font-style: roboto;
+    font-style: normal;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #71A89E;
+    left: -1px;
+    box-shadow: 2px 2px 2px black;
+}
+.text>p{
+    font-family: roboto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    letter-spacing: -2%;
+    color: #22322F;
+    margin-top: 1.95vh;
+}
+.text>h1{
+    font-family: roboto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color:#22322F;
+}
+.illustration>img{
+    width: 40vw;
+    position: relative;
+    top: -100px;
+}
+@media screen and (max-width:650px) {
+    .cont{
+        flex-direction: column-reverse;
+    }
+    .text>h1{
+        align-self: center;
+        font-size: 28px;
+    }
+    .text>p{
+        align-self: center;
+        font-size: 18px;
+    }
+    .illustration>img{
+        z-index: 1;
+        width: 100vw;
+    }
+    .text>button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 80vw;
+    }
+    .text{
+        top:-110px;
+    }
+    .header{
+        flex-direction: column;
+        z-index: 10;
+    }
+    .nav{
+        right: 0;
+        z-index: 10;
+    }
+    .logo>img{
+        left: 0;
+    }
+}
