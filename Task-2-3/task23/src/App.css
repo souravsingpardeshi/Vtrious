@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla');
+*{
+  padding: 0%;
+  margin: 0%;
+}
+body{
+  background-image: url("/src/Component/Rectangle\ 1.svg");
+  background-position:center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 100vh;
+}

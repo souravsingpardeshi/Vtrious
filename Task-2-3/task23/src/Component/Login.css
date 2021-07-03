@@ -1,0 +1,90 @@
+
+.SignMain{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 38vw;
+    align-self: center;
+    align-items: center;
+    border-radius: 8%;
+    background-color: aliceblue;
+  }
+  .SignMain>form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  .SignMain>form>h1{
+    margin-top: 50px;
+    font-family: karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    color: #212B27;
+  }
+  .SignMain>form>h2{
+    line-height: 20px;
+    font-family: karla;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 8px;
+    color: #32403B;
+  }
+  .SignMain>form>input{
+    width: 30vw;
+    height: 8vh;
+    margin: 10px;
+    background: #FFFFFF;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 15.3407px;
+  }
+  form>input#mail{
+    margin-bottom: 20px;
+    margin-top: 35px;
+  }
+  form>input#mail, #pass{
+    text-indent: 30px;
+    font-size: 14px;
+  }
+  form>p{
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: karla;
+    color: #32403B;
+  }
+  form>button{
+    background-color: #84C7AE;
+  width: 18vw;
+  height: 8vh;
+  left: 603.41px;
+  border-style: none;
+  top: 762.63px;
+  background: #84C7AE;
+  margin-top: 20px;
+  border-radius:3vh;
+  color: #FFFFFF;
+  font-family: karla;
+  font-size: 20px;
+  }
+  @media screen and (max-width:550px) {
+    .SignMain{
+      width: 90vw;
+      height: 50vh;
+    }
+    .SignMain>form>input{
+      width: 80vw;
+      height: 5vh;
+    }
+    .SignMain>form>button{
+      width: 55vw;
+      height: 3rem;
+      border-radius: 1rem;
+    }
+    .SignMain>form>h1{
+      margin-top: 50px;
+    }
+  }

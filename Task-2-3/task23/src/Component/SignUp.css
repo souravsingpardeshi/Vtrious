@@ -1,0 +1,77 @@
+.create{
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+    height: 85vh;
+    align-items: center;
+    text-align: center;
+    border-radius: 5%;
+    background-color: aliceblue;
+}
+.create>form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 55%;
+}
+.create>h1{
+    font-family: karla;
+    margin-top: 60px;
+    font-size: 35px;
+    font-weight: 700;
+    font-style: normal;
+    color: #212B27;
+}
+.create>p{
+    margin-top: 10px;
+    font-family: karla;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 18px;
+    font-style: normal;
+    color: #212B27;
+}
+.create>form{
+    width: 65%;
+    height: 50%;
+    margin-top: 44px;
+}
+form>input{
+    border-radius: 8px;
+    border: 1.53407px solid rgba(0, 0, 0, 0.1);
+    height: 6vh;
+    text-indent: 25px;
+    font-family: karla;
+    font-weight: 400;
+}
+.create>button{
+    width: 18vw;
+    height: 8vh;
+    margin-top: -20px;
+    border-radius: 18px;
+    border-style: none;
+    color: white;
+    font-size: 18px;
+    font-family: karla;
+    font-weight: 700;
+    background-color: #84C7AE;
+}
+@media screen and (max-width:550px) {
+    .create{
+        width: 90vw;
+        height: 70vh;
+    }
+    .create>h1{
+        font-size: 27px;
+        margin-top: 30px;
+    }
+    form>input{
+        align-self: center;
+        width: 80vw;
+    }
+    .create>button{
+        width: 50vw;
+        margin-top: 22px;
+    }
+    
+}

@@ -1,0 +1,65 @@
+.fetch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #F6FBF9;
+    width: 45vw;
+    border-radius: 5%;
+    height: 80vh;
+}
+.fetch>h2{
+    font-family: karla;
+    font-size: 38px;
+    margin-top: 60px;
+    color: #212B27;
+    font-style: normal;
+    font-weight: bold;
+}
+.fetch>p{
+    color: #32403B;
+    font-size: 15px;
+    line-height: 18px;
+    font-style: normal;
+    font-weight: normal;
+}
+.ot{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: start;
+    width: 60%;
+}
+.ot>h1{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    font-family: karla;
+    font-weight: normal;
+    font-style: normal;
+}
+.fetch>button{
+    width: 18vw;
+    height: 8vh;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #84C7AE;
+    color: #ffffff;
+    font-size: 17px;
+    border-style: none;
+    border-radius: 18px;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+}
+@media screen and (max-width:550px) {
+    .fetch{
+      width: 95vw;
+    }
+    .fetch>button{
+      width: 50vw;
+      
+    }
+  }
