@@ -21,10 +21,15 @@ function App() {
       }})
     return unsubscribe
   }, [])
-
+ const [dark,setDark] = useState(false);
   return (
+    <div className={dark? 'dark':'light'}>
     <div className="App">
         <Router>
+        <label className="switch">
+            <input type="checkbox" onChange={() => setDark(!dark)} />
+            <span className="slider round"> </span>
+          </label>
     <Switch>
       <Route path="/Login">
       <Login />
@@ -40,6 +45,7 @@ function App() {
       </Route>
     </Switch>
     </Router>
+    </div>
     </div>
   );
 }

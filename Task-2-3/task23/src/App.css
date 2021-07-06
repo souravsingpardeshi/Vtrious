@@ -3,13 +3,145 @@
   padding: 0%;
   margin: 0%;
 }
-body{
+ .App{
   background-image: url("/src/Component/Rectangle\ 1.svg");
   background-position:center;
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   background-size: cover;
   height: 100vh;
+}
+.light{
+  transition:1s ease-in-out;
+}
+.dark .fetch{
+  background-color: #121212;
+  transition: background-color 0.3s ease-in-out;
+}
+.dark .fetch>h2{
+  color: rgb(103, 184, 238);
+}
+.dark .fetch>p{
+  color: rgb(169, 173, 177);
+}
+.dark .ot>h1{
+  color: rgb(172, 177, 180);
+}
+.light .fetch{
+  transition: background-color 0.3s ease-in-out;
+}
+.dark .App{
+  transition: 0.3s ease-in-out;
+  background-image: url("/src/Component/Rectangle\ 1.svg");
+  filter: brightness(80%)
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch {
+  position: relative;
+  background-image: url("./Component/mg.jpg");
+  border-radius: 34px;
+  background-position: center;
+  background-size: contain;
+  top: -10px;
+  align-self: center;
+  border: 0.1px solid black;
+  width: 60px;
+  height: 34px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: rgba(255, 255, 255, 0.377);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+input:checked + .slider {
+  background-image: url("./Component/ng.jpg");
+  background-position: center;
+  background-size: contain;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.dark .SignMain{
+  background-color: #121212;
+  transition: background-color 0.3s ease-in-out;
+}
+.dark .SignMain>form>h1{
+  color: #2196f3;
+}
+.dark .SignMain>form>h2{
+  color:aliceblue;
+}
+.dark .SignMain>form>p{
+  color: #2196f3;
+}
+.dark .SignMain>form>input{
+  background-color: #1a1a1a;
+  color: aliceblue;
+}
+.light .SignMain{
+  transition: background-color 0.3s ease-in-out;
+}
+.light .create{
+  transition: background-color 0.3s ease-in-out;
+}
+.dark .create{
+  background-color: #121212;
+  transition: background-color 0.3s ease-in-out;
+}
+.dark .create>form>input{
+  background-color: #1a1a1a;
+  color: aliceblue;
+}
+.dark .create>h1{
+  color: #2196f3;
+}
+.dark .create>p{
+  color: aliceblue;
+}
+@media screen and (max-width:550px) {
+  .switch{
+    left:19vh;
+  }
 }
